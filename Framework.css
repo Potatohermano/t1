@@ -1,0 +1,264 @@
+body {
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.base {
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+}
+
+.title {
+  text-transform: uppercase;
+  font-family: Verdana, sans-serif; /* Added fallback font */
+  font-size: 5vw;
+  font-weight: 700;
+  color: #f5f5f5;
+  text-shadow: 1px 1px 1px rgba(145, 145, 145, 1),
+    1px 2px 1px rgba(145, 145, 145, 1), 1px 3px 1px rgba(145, 145, 145, 1),
+    1px 4px 1px rgba(145, 145, 145, 1), 1px 5px 1px rgba(145, 145, 145, 1),
+    1px 14px 6px rgba(16, 16, 16, 0.4);
+  margin-bottom: -1.5vh;
+}
+
+.structure {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  row-gap: 4vh;
+  margin-top: -7vh;
+}
+
+.msg {
+  transition: opacity 0.5s;
+  opacity: 1;
+  z-index: 100;
+  font-size: 3vw; /* Changed 'vb' to 'vw' for consistency */
+}
+
+.display {
+  height: 50vh;
+  width: 70vw;
+  border: 3px solid blue;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aliceblue;
+  overflow: hidden;
+  position: relative;
+  font-size: 4vw; /* Changed 'vb' to 'vw' for consistency */
+}
+
+.a1 {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.a2 {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.Framework {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 16vh;
+  width: 100vw;
+  column-gap: 5vw; /* Changed 'vb' to 'vw' for consistency */
+}
+
+.list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid red;
+  border-radius: 10px;
+  position: absolute;
+  top: 100%;
+  left: 36.5%;
+  height: 3vh;
+  width: 5vw;
+  transition: 0.55s;
+  color: white;
+  background-color: red;
+  font-size: 2vw; /* Changed 'vb' to 'vw' for consistency */
+}
+
+.list:hover {
+  background-color: aliceblue;
+  color: black;
+}
+
+.Bg {
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.5s;
+  position: absolute;
+}
+
+.site {
+  height: 16vh;
+  width: 20vw;
+  border: 3px solid blue;
+  border-radius: 10px;
+  box-shadow: 6px 6px 6px black;
+  transition: 0.5s;
+  overflow: hidden;
+  position: relative;
+  bottom: 0%;
+  left: 0%;
+}
+
+.site img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.site:hover {
+  cursor: pointer;
+  box-shadow: 0 0 0 black;
+  border: 3px solid red;
+  position: relative;
+  bottom: -0.5%;
+  left: 0.05%;
+}
+
+.Pop_up {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid red;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.5s;
+  font-size: 2.25vw;
+  border-radius: 10px;
+  background-color: white;
+  position: absolute;
+  top: -0.7%;
+  left: -1%;
+}
+
+.b1 {
+  width: 13.5vw;
+  height: 3vh;
+}
+
+.b2 {
+  width: 17vw;
+  height: 3vh;
+}
+
+.b3 {
+  width: 3vw;
+  height: 3vh;
+}
+
+.endmark {
+  border-radius: 10px;
+  font-weight: bolder;
+  font-size: 2.5vw;
+  color: antiquewhite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  position: fixed;
+  bottom: 0px;
+}
+
+@keyframes rainbow {
+  0% {
+    background-position: 0%;
+  }
+  8.33% {
+    background-position: 50%;
+  } /* Complete one cycle in 5 seconds */
+  16.66% {
+    background-position: 100%;
+  } /* Complete one cycle in 5 seconds */
+  24.99% {
+    background-position: 150%;
+  } /* Complete one cycle in 5 seconds */
+  33.32% {
+    background-position: 200%;
+  } /* Complete one cycle in 5 seconds */
+  41.65% {
+    background-position: 250%;
+  } /* Complete one cycle in 5 seconds */
+  49.98% {
+    background-position: 300%;
+  } /* Complete one cycle in 5 seconds */
+  58.31% {
+    background-position: 350%;
+  } /* Complete one cycle in 5 seconds */
+  66.64% {
+    background-position: 400%;
+  } /* Complete one cycle in 5 seconds */
+  74.97% {
+    background-position: 450%;
+  } /* Complete one cycle in 5 seconds */
+  83.30% {
+    background-position: 500%;
+  } /* Complete one cycle in 5 seconds */
+  91.63% {
+    background-position: 550%;
+  } /* Complete one cycle in 5 seconds */
+  99.96% {
+    background-position: 600%;
+  } /* Complete one cycle in 5 seconds */
+}
+
+.endmark:hover {
+  background: linear-gradient(
+    90deg,
+    red,
+    orange,
+    yellow,
+    green,
+    blue,
+    indigo,
+    violet,
+    purple,
+    blue,
+    green,
+    yellow,
+    orange,
+    red,
+    red,
+    orange,
+    yellow,
+    green,
+    blue,
+    indigo,
+    violet,
+    purple,
+    blue,
+    green,
+    yellow,
+    orange,
+    red
+  );
+  background-size: 400%; /* Increased size for smooth transition */
+  -webkit-background-clip: text; /* For Safari */
+  background-clip: text;
+  color: transparent;
+  font-size: 2.5vw;
+  animation: rainbow 60s linear infinite;
+  cursor: pointer;
+}
