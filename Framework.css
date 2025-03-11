@@ -1,0 +1,316 @@
+body {
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.base {
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+}
+
+.title {
+  text-transform: uppercase;
+  font-family: Verdana, sans-serif;
+  font-size: clamp(1rem, 5vw, 4rem);
+  font-weight: 700;
+  color: #f5f5f5;
+  text-shadow: 0.1vh 0.1vh 0.1vh rgba(145, 145, 145, 1),
+    0.1vh 0.2vh 0.1vh rgba(145, 145, 145, 1),
+    0.1vh 0.3vh 0.1vh rgba(145, 145, 145, 1),
+    0.1vh 0.4vh 0.1vh rgba(145, 145, 145, 1);
+  margin-bottom: -1.5vh;
+}
+
+.structure {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  row-gap: 4vh;
+  margin-top: -7vh;
+}
+
+.msg {
+  transition: opacity 0.5s;
+  opacity: 1;
+  z-index: 100;
+  font-size: 3vw;
+}
+
+.display {
+  height: 50vh;
+  width: 70vw;
+  max-width: 1000px;
+  max-height: 700px;
+  border: 0.25vh solid blue;
+  border-radius: 1vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aliceblue;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0px 0px 12px rgb(224, 224, 174);
+}
+
+.displaytext {
+  font-size: clamp(0.75rem, 2vw, 2.5rem);
+  color: blue;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 1vh;
+  margin: auto;
+}
+
+.a1 {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.a2 {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.a3 {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.Framework {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 16vh;
+  width: 100vw;
+  column-gap: 4.5vw;
+}
+
+.list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.1vh solid red;
+  border-radius: 1vh;
+  position: absolute;
+  top: 100%;
+  margin: auto;
+  left: 0;
+  right: 0;
+  height: 3vh;
+  width: 5vw;
+  max-width: 70px;
+  max-height: 40px;
+  transition: 0.55s;
+  color: white;
+  background-color: red;
+  font-size: clamp(0.75rem, 1.75vw, 2rem);
+}
+
+.list:hover {
+  background-color: aliceblue;
+  color: black;
+}
+
+.Bg {
+  opacity: 0;
+  transition: opacity 0.5s;
+  position: absolute;
+}
+
+.site {
+  height: 16vh;
+  width: 18vw;
+  max-width: 270px;
+  max-height: 200px;
+  border: 0.25vh solid blue;
+  border-radius: 1vh;
+  box-shadow: 6px 6px 6px black;
+  transition: 0.5s;
+  overflow: hidden;
+  position: relative;
+  bottom: 0%;
+  left: 0%;
+}
+
+.site img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.site:hover {
+  cursor: pointer;
+  box-shadow: 0 0 0 black;
+  border: 0.25vh solid red;
+  position: relative;
+  bottom: -0.5%;
+  left: 0.1%;
+}
+
+/* .arrow {
+  height: 1.2vh;
+  width: 2.5vw;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  background-color: white;
+  border: 1px solid red;
+}
+
+.rarrow {
+  border-bottom-left-radius: 1vh;
+  border-top-left-radius: 1vh;
+}
+
+.larrow {
+  border-bottom-right-radius: 1vh;
+  border-top-right-radius: 1vh;
+}
+
+.arrow:hover {
+  cursor: pointer;
+} */
+
+.endmark {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  left: 0;
+  right: 0;
+  position: absolute;
+  bottom: 0;
+}
+
+.Easter1 {
+  height: 8vmin;
+  width: 8vmin;
+  position: absolute;
+  right: 4%;
+  top: 2%;
+  /* border: 0.1vh solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.moon {
+  background: linear-gradient(40deg, rgb(240, 239, 186), rgb(179, 178, 121));
+  height: 6vmin;
+  width: 6vmin;
+  border-radius: 50%;
+  position: absolute;
+  margin: auto;
+  overflow: hidden;
+}
+
+.crater {
+  background: linear-gradient(40deg, rgb(240, 239, 186), rgb(131, 130, 91));
+  height: 1vmin;
+  width: 1vmin;
+  border-radius: 50%;
+  position: relative;
+}
+
+.crater1 {
+  background: linear-gradient(40deg, rgb(199, 198, 150), rgb(133, 132, 91));
+  top: 10%;
+  left: 70%;
+  transform: scale(1.75);
+}
+.crater2 {
+  top: 26%;
+  left: 36%;
+  transform: scale(1.2);
+}
+.crater3 {
+  background: linear-gradient(45deg, rgb(240, 239, 186), rgb(131, 130, 91));
+  top: 40%;
+  left: 50%;
+  transform: scale(1);
+}
+.crater4 {
+  top: -40%;
+  left: 3%;
+  transform: scale(1.5);
+}
+
+.orbit {
+  height: 8vmin;
+  width: 8vmin;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: 50%;
+  animation: spin 5s infinite linear;
+  animation-play-state: paused;
+  /* border: .1vh solid red; */
+}
+
+.orbit:hover {
+  cursor: pointer;
+  animation-play-state: running;
+}
+
+.rocket {
+  background-color: white;
+  height: 2vmin;
+  width: 0.75vmin;
+  border-radius: 50% 50% 0 0;
+  position: relative;
+  left: -4%;
+  top: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.window {
+  height: 0.35vmin;
+  width: 0.35vmin;
+  background-color: silver;
+  border: 0.2vh solid black;
+  border-radius: 50%;
+  position: relative;
+  bottom: 0%;
+  left: 5%;
+}
+
+.fire {
+  height: 0.75vmin;
+  width: 0.75vmin;
+  background: linear-gradient(to bottom, orange, red);
+  position: absolute;
+  bottom: -40%;
+  z-index: -1;
+  border-radius: 30% 40% 40%;
+  opacity: 0;
+  transition: 0.15s;
+}
+
+.orbit:hover .fire {
+  opacity: 1;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
